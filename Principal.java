@@ -1,17 +1,18 @@
-package ejercicios_poo.clase20.ejercicio01;
+package ejercicios_poo.clase20.ejercicio02;
 
 public class Principal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Frescos a1=new Frescos("5 de enero", 5422, "china");
+		System.out.println(a1.toString());
+
 		
-		Bombero a1=new Bombero("mario", "rojas", 45,true, true);
-		a1.isCasado();
-		System.out.println("El bombero "+a1.getNombre()+" "+(a1.isCasado()?"si":"no")+" es casado");
+		Refrigerados a2=new Refrigerados("7 de marzo del 2021", 96555);
+		System.out.println(a2.toString());
 		
-		Bombero a2=new Bombero("mrtin", "pineda", 45,false, true);
-		a2.isCasado();
-		System.out.println("El bombero "+a2.getNombre()+" "+(a2.isCasado()?"si":"no")+" es casado");
+		Congelados a3= new Congelados("12 de diciembre del 2020", 5126, 8);
+		System.out.println(a3.toString());
 	}
 
 }
